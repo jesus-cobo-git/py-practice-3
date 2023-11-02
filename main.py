@@ -3,7 +3,6 @@ Exercise 1: Guess the number
 Exercise 2: Multiplication table
 Exercise 3: Basic calculator
 """
-
 import random
 
 def guess_the_number():
@@ -13,17 +12,18 @@ def guess_the_number():
   while True:
     guess = int(input("Guess the number (1-10): "))
     attempts += 1
+    break
+  if guess < target_number:
+        print (f"too low. Try again.")
+      
+  elif guess > target_number:
+      print (f"Too High. Try again.")
+  else: 
+        print (f"Congratulations! You guessed the number ({target_number}) in {attempts} attempts.")
+          
+   
+       
 
-    # implement a if-else statement
-    if guess: # Fix code
-      # if guess is less than target_number
-      # print "Too low. Try again."
-      # else if guess is greater than target_number
-      # print "Too high. Try again."
-      print("Try again.")
-    else:
-      print(f"Congratulations! You guessed the number ({target_number}) in {attempts} attempts.")
-      break
 
 
 def multiplication_table():
