@@ -27,14 +27,16 @@ def guess_the_number():
 
 
 def multiplication_table():
-  number = int(input("Enter an integer: "))
+    number = int(input("Enter an integer: "))
+    print(f"Multiplication Table for {number}:")
 
-  print(f"Multiplication Table for {number}:")
-  # Fix code
-  # implement a for loop
-  i = 1 # fix code
-  result = number * i # fix code
-  print(f"{number} x {i} = {result}")
+    for i in range(1, 11):
+        result = number * i
+        print(f"{number} x {i} = {result}")
+
+multiplication_table()
+
+
 
 
 def basic_calculator():
@@ -49,6 +51,9 @@ def basic_calculator():
     result = "Invalid operator"
 
   print("Result:", result)
+
+  
+
 
 
 def main():
